@@ -963,7 +963,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
-	background: #313131;
+	background: #C33764;
+	background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+	background: linear-gradient(to left, #1D2671, #C33764);
 	position: relative;
 	height: 100%;
 }

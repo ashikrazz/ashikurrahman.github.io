@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js oldie ie8" lang="en"> <![endif]-->
+<html class="no-js oldie ie9" lang="en"> <![endif]-->
+<html class="no-js" lang="en">
 <head>
 
    <!--- basic page needs
@@ -11,6 +11,7 @@
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
+
    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,12 +20,16 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -40,8 +45,7 @@
    	<div class="row">
 
    		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>		      
-
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
@@ -51,11 +55,10 @@
 						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
 						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>					
 					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
+			</nav>
+   		</div>
+   	</div>
+   </header>
 
 	<!-- intro section
    ================================================== -->
@@ -81,16 +84,15 @@
 	   		</div>  
    			
    		</div>   		 		
-   	</div> <!-- /intro-content --> 
+   	</div>
 
    	<ul class="intro-social">        
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-      </ul> <!-- /intro-social -->      	
+         <li><a href="https://www.facebook.com/ashik.razz.8490"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://github.com/ashikrazz"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/ashikur-rahman-852a9a1b9/"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
 
-   </section> <!-- /intro -->
+   </section>
 
 
    <!-- about section
@@ -132,12 +134,8 @@
    					<span>Student, Freelancer, Frontend Developer and Backend Developer</span>
    				</li>
    				<li>
-   					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
-   				</li>
-   				<li>
    					<strong>Email:</strong>
-   					<span>razzashik@gmail.com</span>
+   					<span>ashikurrahman173219@gmail.com</span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -145,58 +143,77 @@
    		</div>
 
    		<div class="col-six tab-full">
-
    			<h3>Skills</h3>
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>Java Script</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Java</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Python</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>Bootstrap</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>C++</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent100"><span>100%</span></div>
-				   	<strong>C</strong>
-				   </li>
-      
-				</ul> <!-- /skill-bars -->		
-
+			<div class="container mt-3">
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#one">Programming Language Skills</button>
+				<div id="one" class="collapse">
+					<ul class="skill-bars">
+						<li>
+							<div class="progress percent100" ><span>100%</span></div>
+							<strong>C / C++</strong>
+						</li>
+						<li>
+							<div class="progress percent95"><span>95%</span></div>
+							<strong>java</strong>
+						</li>
+						<li>
+							<div class="progress percent95"><span>95%</span></div>
+							<strong>JavaScript</strong>
+						</li>
+						<li>
+							<div class="progress percent95"><span>95%</span></div>
+							<strong>TypeScript</strong>
+						</li>
+						<li>
+							<div class="progress percent90"><span>90%</span></div>
+							<strong>Python</strong>
+						</li>
+						<li>
+							<div class="progress percent95"><span>95%</span></div>
+							<strong>PHP</strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container mt-3">
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#two">Framework Skills</button>
+				<div id="two" class="collapse">
+					<ul class="skill-bars">
+						<li>
+							<div class="progress percent85"><span>85%</span></div>
+							<strong>Angular</strong>
+						</li>
+						<li>
+							<div class="progress percent95"><span>95%</span></div>
+							<strong>MySQL / SQLite (SQL DB)</strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container mt-3">
+				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#three">Others Skills</button>
+				<div id="three" class="collapse">
+					<ul class="skill-bars">
+						<li>
+							<div class="progress percent100" ><span>100%</span></div>
+							<strong>HTML</strong>
+						</li>
+						<li>
+							<div class="progress percent100"><span>100%</span></div>
+							<strong>CSS / Bootstrap</strong>
+						</li>
+						<li>
+							<div class="progress percent85"><span>85%</span></div>
+							<strong>Data Structure</strong>
+						</li>
+						<li>
+							<div class="progress percent85"><span>85%</span></div>
+							<strong>Problem Solving</strong>
+						</li>
+					</ul>
+				</div>
+			</div>
    		</div>
-
    	</div>
 
    	<div class="row button-section">
@@ -227,14 +244,12 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Work Experience</h2>
+   			<h2>Work Experience / PROJECTS</h2>
 
    		</div> <!-- /resume-header -->
 
    		<div class="col-twelve">
-
    			<div class="timeline-wrap">
-
    				<div class="timeline-block">
 
 	   				<div class="timeline-ico">
@@ -242,19 +257,15 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Indivisual Projects</h3>
-	   					<p>2019 - Present</p>
+	   					<h3>Individual Projects</h3>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>At Daffodil International University</h4>
-	   					<p>I completed many indivisual projects in Daffodil International University like Duicaka Cycling, Jungshon, Forest Films, Phosporous, Immicons, Vaccination System, Speech Recognition System, National Safari Park etc.</p>
+	   					<p>I completed many indivisual projects in Daffodil International University like Duicaka Cycling, Jungshon, Phosporous, Immicons, Android application etc.</p>
 	   				</div>
 
-	   			</div> <!-- /timeline-block -->
-
-	   			 <!-- /timeline-block -->
-
+	   			</div>
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
@@ -262,21 +273,201 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Programming Contest</h3>
-	   					<p>October 12, 2019</p>
+	   					<h3>Individual Project</h3>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Daffodil International University</h4>
-	   					<p>12 October, 2019 Daffodil International University was created a event named CIS DAY 2019. Advance category of Programming Contest was the sub event and I got 2nd place in the programming contest.</p>
+	   					<h4>National Safari Park</h4>
+	   					<p>This project is a simple website for both user and admin.
+							This project was built using <b>HTML, CSS, Bootstrap, JavaScript</b> for frontend, <b>PHP</b> for backend and <b>MySQL</b> for the database.
+						</p>
+						<a href="https://github.com/ashikrazz/National-Safari-Park.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
 	   				</div>
 
-	   			</div> <!-- /timeline-block -->
+	   			</div>
+				<div class="timeline-block">
 
-   			</div> <!-- /timeline-wrap -->   			
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
 
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Virtual Assistant</h4>
+						<p>This project is a simple Virtual Assistant application for Desktop.
+							This project was built using <b>Python</b>
+						</p>
+						<a href="https://github.com/ashikrazz/Virtual_Assistant.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>CPU Scheduling Calculator</h4>
+						<p>This project is a simple Command Line based application for Desktop.
+							This project was built using <b>Java</b> as programming language & <b>FCFS, SJF, Round Robin</b> as algorithm for calculating.
+						</p>
+						<a href="https://github.com/ashikrazz/CPU-scheduling-calculator.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Fantastic Gardens Database Design</h4>
+						<p>This project is a simple Database design.
+							This project was built using <b>MySQL</b>
+						</p>
+						<a href="https://github.com/ashikrazz/Fantastic-Gardens-database-design.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Forest Films Database Design</h4>
+						<p>This project is a simple Database design.
+							This project was built using <b>MySQL</b>
+						</p>
+						<a href="https://github.com/ashikrazz/forest_films_database_design.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Face Mask Detection</h4>
+						<p>This project is a simple application for Desktop.
+							This project was built using <b>Python</b>
+						</p>
+						<a href="https://github.com/ashikrazz/Face-Mask-Detection.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Face Recognition Attendance System</h4>
+						<p>This project is a simple application for Desktop.
+							This project was built using <b>Python</b>
+						</p>
+						<a href="https://github.com/ashikrazz/Face_recognition_attendance_system.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Individual Project</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Vaccination System</h4>
+						<p>This project is a simple UI based application for Desktop.
+							This project was built using <b>Java & MySQL</b>
+						</p>
+						<a href="https://github.com/ashikrazz/Vaccination_System.git" class="btn btn-primary" target="_blank">
+							<button type="button" class="btn btn-primary">
+								GitHub <i class="fa fa-github"></i>
+							</button>
+						</a>
+					</div>
+
+				</div>
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Additional Experience</h3>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Daffodil International University (Programming Contest )</h4>
+						<p>12 October, 2019 Daffodil International University was created a event named CIS DAY 2019. Advance category of Programming Contest was the sub event and I got 2nd place in the programming contest.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+   			</div> <!-- /timeline-wrap -->
    		</div> <!-- /col-twelve -->
-   		
    	</div> <!-- /resume-timeline -->
    	
    	<div class="row resume-timeline">
@@ -339,7 +530,7 @@
 
 	   				<div class="timeline-content">
 	   					<h4>Milestone College</h4>
-	   					<p>I complete my S.S.C degree in Milestone College with GPA 5.00 (A+) in Science.</p>
+	   					<p>I complete my H.S.C degree in Milestone College with GPA 5.00 (A+) in Science.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -361,11 +552,8 @@
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
+   			</div> <!-- /timeline-wrap -->
    		</div> <!-- /col-twelve -->
-   		
    	</div> <!-- /resume-timeline -->
 		
 	</section> <!-- /features -->
@@ -973,15 +1161,13 @@
 			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
 			      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			   </ul> 
-	      		
-	      </div>
-
+			   </ul>
+	      	</div>
+		</div>
       	<div class="col-eight tab-full">
 	      	<div id="go-top">
 		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
+			</div>
       	</div> <!-- /row -->     	
    </footer>  
 
